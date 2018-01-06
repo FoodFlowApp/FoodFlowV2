@@ -14,12 +14,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'profile.html',
 })
 export class ProfilePage {
+  showMens = false;
+  showNut = false;
+  showFit = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfilePage');
+  }
+
+  showMenstrual() {
+    this.showMens = !this.showMens;
+  }
+
+  showNutrition() {
+    this.showNut = !this.showNut;
+  }
+
+  showFitness() {
+    this.showFit = !this.showFit;
   }
 
 }
