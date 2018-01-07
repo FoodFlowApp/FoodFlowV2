@@ -16,5 +16,76 @@
 
 
 <ion-content padding>
+  Data for 1/7/2018
+  <br>
+  Menstrual Cycle
+  <ion-item>
+    <ion-label>Bleeding</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Flow</ion-label>
+    <ion-select [(ngModel)]="flow">
+      <ion-option value="f">Low</ion-option>
+      <ion-option value="m">Medium</ion-option>
+      <ion-option value="h">High</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Cramps</ion-label>
+    <ion-select [(ngModel)]="cramps">
+      <ion-option value="f">Mild</ion-option>
+      <ion-option value="m">Moderate</ion-option>
+      <ion-option value="h">Ouch!</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Mood</ion-label>
+    <ion-select [(ngModel)]="mood">
+      <ion-option value="no">No Mood</ion-option>
+      <ion-option value="fair">Fair</ion-option>
+      <ion-option value="angry">Angry</ion-option>
+    </ion-select>
+  </ion-item>
+
+  Nutrition Macros
+
+  <ion-item>
+    <ion-label fixed>Carbs</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Fats</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Protiens</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+  
+
+  Exercise
+
+  <ion-item>
+    <ion-label>Type</ion-label>
+    <ion-select [(ngModel)]="exerciseType">
+      <ion-option value="Cardio">Cardio</ion-option>
+      <ion-option value="Weight Training">Weight Training</ion-option>
+
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label fixed>Duration</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+
+
 
 </ion-content>

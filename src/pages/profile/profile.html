@@ -21,27 +21,27 @@
 
     <ion-item>
       <ion-label fixed>Name </ion-label>
-      <ion-input type="text" value=""></ion-input>
+      <ion-input type="text" [(ngModel)]="exampleUserOne.name"></ion-input>
     </ion-item>
 
 
     <ion-item>
       <ion-label>Birthday</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myBirthday"></ion-datetime>
+      <ion-input type="text" [(ngModel)]="exampleUserOne.birthdate"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label fixed>Height Feet </ion-label>
-      <ion-input type="number" value="" [(ngModel)]="myHeight"></ion-input>
+      <ion-input type="number" value="" [(ngModel)]="exampleUserOne.height"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label fixed>Height Inches </ion-label>
-      <ion-input type="number" value="" [(ngModel)]="myHeight"></ion-input>
+      <ion-input type="number" value="" [(ngModel)]="exampleUserOne.inches"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label fixed>Weight </ion-label>
-      <ion-input type="number" value="" [(ngModel)]="myWeight"></ion-input>
+      <ion-input type="number" value="" [(ngModel)]="exampleUserOne.weight"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -62,7 +62,7 @@
         <div *ngIf="showMens"> <!-- Add ng-show for here -->
           <ion-item>
             <ion-label>Flow</ion-label>
-            <ion-toggle  checked="false"></ion-toggle>
+            <ion-toggle  checked="true"></ion-toggle>
           </ion-item>
           <ion-item>
             <ion-label>Mood</ion-label>
@@ -74,7 +74,7 @@
           </ion-item>-->
           <ion-item>
             <ion-label>Cramps</ion-label>
-            <ion-toggle  checked="false"></ion-toggle>
+            <ion-toggle  checked="true"></ion-toggle>
           </ion-item>
           <!-- <ion-item>
             <ion-label>Sleep</ion-label>
@@ -88,7 +88,7 @@
         <div *ngIf="showNut"><!-- Add ng-show toggle -->
           <ion-item>
             <ion-label>Food</ion-label>
-            <ion-toggle  checked="false"></ion-toggle>
+            <ion-toggle  checked="true"></ion-toggle>
           </ion-item>
         </div>
         <button ion-item (click)="showFitness()">
@@ -98,7 +98,7 @@
         <div *ngIf="showFit"><!-- Add ng-show to show toggles -->
           <ion-item>
             <ion-label>Activity</ion-label>
-            <ion-toggle  checked="false"></ion-toggle>
+            <ion-toggle  checked="true"></ion-toggle>
           </ion-item>
         </div>
       </ion-list>

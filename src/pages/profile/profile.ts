@@ -18,6 +18,26 @@ export class ProfilePage {
   showNut = false;
   showFit = false;
 
+  exampleUserOne: Object = 
+  {
+    name: 'Flo Daies',
+    birthdate: '4/2/1962',
+    height: 5,
+    inches: 4,
+    weight: 150,
+    birthControl: false,
+  };
+
+  exampleUserTwo: Object = 
+  {
+    name: 'Jules Sparkle',
+    birthdate: '12/15/86',
+    height: 5,
+    inches: 4,
+    weight: 150,
+    birthControl: false,
+  };
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
