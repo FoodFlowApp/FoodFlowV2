@@ -27,31 +27,37 @@
   <ion-item>
     <ion-label>Flow</ion-label>
     <ion-select [(ngModel)]="flow">
-      <ion-option value="f">Low</ion-option>
-      <ion-option value="m">Medium</ion-option>
-      <ion-option value="h">High</ion-option>
+      <ion-option value="1">None</ion-option>
+      <ion-option value="2">Spotting</ion-option>
+      <ion-option value="3">Slow, but steady</ion-option>
+      <ion-option value="4">A gentle river</ion-option>
+      <ion-option value="5">A little heavy</ion-option>
+      <ion-option value="6">Super everything please</ion-option>
     </ion-select>
   </ion-item>
 
   <ion-item>
     <ion-label>Cramps</ion-label>
     <ion-select [(ngModel)]="cramps">
-      <ion-option value="f">Mild</ion-option>
-      <ion-option value="m">Moderate</ion-option>
-      <ion-option value="h">Ouch!</ion-option>
+      <ion-option value="0">Cramp free!</ion-option>
+      <ion-option value="1">A little twinge</ion-option>
+      <ion-option value="2">I hurt but I can manage</ion-option>
+      <ion-option value="3">Pain reliever please</ion-option>
+      <ion-option value="5">Ouch!</ion-option>
     </ion-select>
   </ion-item>
 
   <ion-item>
     <ion-label>Mood</ion-label>
     <ion-select [(ngModel)]="mood">
-      <ion-option value="no">No Mood</ion-option>
-      <ion-option value="fair">Fair</ion-option>
-      <ion-option value="angry">Angry</ion-option>
+      <ion-option value="0">Nice and steady</ion-option>
+      <ion-option value="1">A little off</ion-option>
+      <ion-option value="2">Careful there...</ion-option>
+      <ion-option value="3">I'm gonna explode!</ion-option>
     </ion-select>
   </ion-item>
 
-  Nutrition Macros
+  Nutrition Macros %
 
   <ion-item>
     <ion-label fixed>Carbs</ion-label>
@@ -75,13 +81,13 @@
     <ion-label>Type</ion-label>
     <ion-select [(ngModel)]="exerciseType">
       <ion-option value="Cardio">Cardio</ion-option>
+      <ion-option value="circuits">Circuits</ion-option>
       <ion-option value="Weight Training">Weight Training</ion-option>
-
     </ion-select>
   </ion-item>
 
   <ion-item>
-    <ion-label fixed>Duration</ion-label>
+    <ion-label fixed>Minutes</ion-label>
     <ion-input type="text" value=""></ion-input>
   </ion-item>
 
