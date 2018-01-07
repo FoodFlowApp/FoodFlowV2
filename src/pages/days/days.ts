@@ -42,7 +42,8 @@ export class DaysPage {
   }
 
   goHome() {
-    this.navCtrl.push(HomePage);
+    // this.navCtrl.pop();
+    this.navCtrl.setRoot(HomePage);
   }
 
 }
