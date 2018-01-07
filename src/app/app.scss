@@ -1,6 +1,17 @@
 // http://ionicframework.com/docs/theming/
 
 
+ion-header {
+    font-family: 'Fredericka the Great', cursive;
+
+
+}
+
+.toolbar-title {
+    font-size: 2.5rem;
+    // color: #767676;
+    // background-color: #09C1E8;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
