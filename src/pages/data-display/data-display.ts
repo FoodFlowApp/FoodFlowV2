@@ -16,22 +16,35 @@ import { Chart } from 'chart.js';
   templateUrl: 'data-display.html',
 })
 export class DataDisplayPage {
+  is100Days: boolean = false;
+  buttonText: string = '100 Days';
 
-  @ViewChild('lineCanvas') lineCanvas;
+  @ViewChild('lineCanvas30') lineCanvas30;
+  // @ViewChild('lineCanvas100') lineCanvas100;
 
   lineChart: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  toggleGraphView() {
+    if(this.is100Days) {
+      this.is100Days = false;
+      this.buttonText = '100 Days';
+    } else {
+      this.is100Days = true;
+      this.buttonText = '30 Days';
+    }
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad DataDisplayPage');
   
 
-  this.lineChart = new Chart(this.lineCanvas.nativeElement, {
+  this.lineChart = new Chart(this.lineCanvas30.nativeElement, {
     type: 'line',
     data: {
-        labels: ["7/1", "7/2", "7/3", "7/4", "7/5", "7/6", "7/7", "7/8", "7/9", "7/10", "7/11", "7/12", "7/13", "7/14", "7/15", "7/16", "7/17", "7/18", "7/19", "7/20", "7/21", "7/22", "7/23", "7/24", "7/25", "7/26", "7/27", "7/28", "7/29", "7/30", "7/31"],
+        labels: ["1/1", "1/2", "1/3", "1/4", "1/5", "1/6", "1/7", "1/8", "1/9", "1/10", "1/11", "1/12", "1/13", "1/14", "1/15", "1/16", "1/17", "1/18", "1/19", "1/20", "1/21", "1/22", "1/23", "1/24", "1/25", "1/26", "1/27", "1/28", "1/29", "1/30", "1/31"],
         datasets: [
             {
                 label: "Carbs",

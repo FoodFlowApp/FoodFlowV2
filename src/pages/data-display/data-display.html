@@ -15,11 +15,19 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-fab top right edge>
+      <button ion-fab (click)='toggleGraphView()'>{{buttonText}}</button>
+  </ion-fab>
+
   <ion-card>
     <ion-card-content>
-      <canvas #lineCanvas></canvas>
+        <!-- <canvas #lineCanvas30></canvas> -->
+      <canvas [hidden]='!is100Days' #lineCanvas30></canvas>
+      <p [hidden]='is100Days'>100 Day</p>
     </ion-card-content>
   </ion-card>
+
+
 
 </ion-content>

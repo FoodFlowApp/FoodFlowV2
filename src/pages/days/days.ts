@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home'
 import * as moment from 'moment';
 /**
  * Generated class for the DaysPage page.
@@ -38,6 +39,10 @@ export class DaysPage {
   getMonth() {
     this.today = moment();
     console.log(this.today);
+  }
+
+  goHome() {
+    this.navCtrl.push(HomePage);
   }
 
 }
