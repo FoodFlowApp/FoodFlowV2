@@ -7,12 +7,159 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-content>
+    <!-- <html> -->
+        <head>
+        
+          <meta charset="utf-8">
+        
+          <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+        
+        
+          <style>
+        
+            body {
+              line-height: 1;
+              /* margin: 50px; */
+            }
+        
+            div {
+              background: rgba(0, 0, 0, .1);
+              border-radius: 5px;
+              box-sizing: border-box;
+              /* padding: 15px; */
+              /* width: 100%; */
+              height: 100%;
+              background-color: transparent;
+              /* display: grid; */
+              /* grid-template-columns: 100%; */
+            }
+        
+            /* header {
+              overflow: clear;
+              position: relative;
+            } */
+        
+            h2 {
+              font-family: 'PT Sans Narrow', sans-serif;
+              font-size: 24px;
+              font-weight: 700;
+              margin: 0 0 10px;
+              text-align: center;
+            }
+        
+            button {
+              position: absolute;
+              top: -4px;
+            }
+        
+            button:first-child {
+              left: 0;
+            }
+        
+            button:last-child {
+              right: 0;
+            }
+        
+            table {
+              background: #fff;
+              border-collapse: collapse;
+              color: #222;
+              font-family: 'PT Sans', sans-serif;
+              font-size: 13px;
+              width: 100%;
+            }
+        
+            td {
+              border: 1px solid #ccc;
+              color: #444;
+              line-height: 60px;
+              /* width: 60px; */
+              text-align: center;
+            }
+        
+            tr:first-child td {
+              color: #222;
+              font-weight: 700;
+            }
+        
+            .selected {
+              background: #f0951d;
+              border: 0;
+              box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+            }
+        
+          </style>
+        
+        </head>
+        
+        <body>
+        
+        <div>
+          <header>
+            <!-- <button>«</button> -->
+            <h2>January 2018</h2>
+            <!-- <button>»</button> -->
+          </header>
+        <table>
+          <tr>
+            <td>S</td>
+            <td>M</td>
+            <td>T</td>
+            <td>W</td>
+            <td>Th</td>
+            <td>F</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td class="selected" (click)='goToDaily()'>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        </div>
+        
+        
+        </body>
+        <!-- </html> -->
 </ion-content>
