@@ -14,6 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { UsersProvider } from '../providers/users/users';
 import { DaysProvider } from '../providers/days/days';
 
+
+
 @NgModule({
   declarations: [
     MyApp,

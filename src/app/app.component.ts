@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { ProfilePage } from '../pages/profile/profile';
 import { DaysPage } from '../pages/days/days';
 import { DataDisplayPage } from '../pages/data-display/data-display';
+import * as moment from 'moment';
 
 @Component({
   templateUrl: 'app.html'
