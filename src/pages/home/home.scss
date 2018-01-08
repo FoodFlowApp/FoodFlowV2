@@ -2,4 +2,32 @@ page-home {
     header {
         padding-top: 15%;
     }
+
+    .data-added {
+        background-color: #0FFFAF;
+    }
+
+    .key-data-added {
+        height: 15px;
+        width: 15px;
+        border: solid black 1px;
+        background-color: #0FFFAF;
+    }
+
+    .key-current-day {
+        height: 15px;
+        width: 15px;
+        border: solid black 1px;
+        background-color: #f0951d;
+    }
+
+    .key-no-data {
+        height: 15px;
+        width: 15px;
+    }
+
+    .home-menu {
+        margin: 10px 6px;
+    }
+
 }

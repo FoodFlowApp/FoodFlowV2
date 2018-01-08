@@ -17,7 +17,8 @@ import { Chart } from 'chart.js';
 })
 export class DataDisplayPage {
   is100Days: boolean = false;
-  buttonText: string = '100 Days';
+  buttonText: string = '100';
+  headerText: string = '30 Days';
 
   @ViewChild('lineCanvas30') lineCanvas30;
   @ViewChild('lineCanvas100') lineCanvas100;
@@ -31,10 +32,12 @@ export class DataDisplayPage {
   toggleGraphView() {
     if(this.is100Days) {
       this.is100Days = false;
-      this.buttonText = '100 Days';
+      this.buttonText = '30';
+      this.headerText = '100 Days';
     } else {
       this.is100Days = true;
-      this.buttonText = '30 Days';
+      this.buttonText = '100';
+      this.headerText = '30 Days';
     }
   }
 
@@ -45,24 +48,24 @@ export class DataDisplayPage {
   this.lineChart = new Chart(this.lineCanvas30.nativeElement, {
     type: 'line',
     data: {
-        labels: ["'1/1'", "1/2", "1/3", "1/4", "1/5", "1/6", "1/7", "1/8", "1/9", "1/10", "1/11", "1/12", "1/13", "1/14", "1/15", "1/16", "1/17", "1/18", "1/19", "1/20", "1/21", "1/22", "1/23", "1/24", "1/25", "1/26", "1/27", "1/28", "1/29", "1/30", "1/31"],
+        labels: ['12/8','12/9','12/10','12/11','12/12','12/13','12/14','12/15','12/16','12/17','12/18','12/19','12/20','12/21','12/22','12/23','12/24','12/25','12/26','12/27','12/28','12/29','12/30','12/31','1/1','1/2','1/3','1/4','1/5','1/6','1/7'],
         datasets: [
             {
                 label: "Carbs",
                 fill: false,
                 lineTension: 0.1,
-                backgroundColor: "rgba(184,255,124,0.4)",
-                borderColor: "rgba(184,255,124,1)",
+                backgroundColor: "rgba(255,0,255,0.4)",
+                borderColor: "rgba(255,0,255,1)",
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 0.0,
                 borderJoinStyle: 'miter',
-                pointBorderColor: "rgba(184,255,124,1)",
+                pointBorderColor: "rgba(255,0,255,1)",
                 pointBackgroundColor: "#fff",
                 pointBorderWidth: 1,
                 pointHoverRadius: 5,
-                pointHoverBackgroundColor: "rgba(184,255,124,1)",
-                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBackgroundColor: "rgba(255,0,255,1)",
+                pointHoverBorderColor: "rgba(255,0,255,1)",
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
                 pointHitRadius: 10,
@@ -172,18 +175,18 @@ export class DataDisplayPage {
                 label: "Carbs",
                 fill: false,
                 lineTension: 0.1,
-                backgroundColor: "rgba(184,255,124,0.4)",
-                borderColor: "rgba(184,255,124,1)",
+                backgroundColor: "rgba(255,0,255,0.4)",
+                borderColor: "rgba(255,0,255,1)",
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 0.0,
                 borderJoinStyle: 'miter',
-                pointBorderColor: "rgba(184,255,124,1)",
+                pointBorderColor: "rgba(255,0,255,1)",
                 pointBackgroundColor: "#fff",
                 pointBorderWidth: 1,
                 pointHoverRadius: 5,
-                pointHoverBackgroundColor: "rgba(184,255,124,1)",
-                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBackgroundColor: "rgba(255,0,255,1)",
+                pointHoverBorderColor: "rgba(255,0,255,1)",
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
                 pointHitRadius: 10,

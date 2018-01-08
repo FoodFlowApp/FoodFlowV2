@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
+    <button ion-button menuToggle class='home-menu'>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Food Flow</ion-title>
@@ -84,7 +84,8 @@
             }
         
             .selected {
-              background: #f0951d;
+              background: #5959FF;
+              color: white;
               border: 0;
               box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
             }
@@ -113,12 +114,12 @@
           </tr>
           <tr>
             <td></td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
+            <td class='data-added'>1</td>
+            <td class='data-added'>2</td>
+            <td class='data-added'>3</td>
+            <td class='data-added'>4</td>
             <td>5</td>
-            <td>6</td>
+            <td class='data-added'>6</td>
           </tr>
           <tr>
             <td class="selected" (click)='goToDaily()'>7</td>
@@ -155,10 +156,21 @@
             <td></td>
             <td></td>
           </tr>
+
         </table>
         </div>
-        
-        
+
+      <!-- <div>
+        <table>
+          <tr>
+            <td class='key-data-added'>Days Logged</td>
+            <td class='key-current-day'>Current Day </td>
+            <td class='key-no-data'>Days Not Logged </td>
+          </tr>
+          </table>
+        </div> -->
+
         </body>
+
         <!-- </html> -->
 </ion-content>

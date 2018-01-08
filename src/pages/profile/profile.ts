@@ -21,7 +21,7 @@ export class ProfilePage {
   exampleUserOne: Object = 
   {
     name: 'Flo Daies',
-    birthdate: '4/2/1962',
+    birthdate: 'April 2, 1988',
     height: 5,
     inches: 4,
     weight: 150,
